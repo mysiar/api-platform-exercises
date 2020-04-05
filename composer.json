@@ -16,7 +16,8 @@
     "symfony/yaml": "5.0.*"
   },
   "require-dev": {
-    "mysiar/coding-standard": "^2.0"
+    "mysiar/coding-standard": "^2.0",
+    "php-parallel-lint/php-parallel-lint": "^1.2"
   },
   "config": {
     "preferred-install": {

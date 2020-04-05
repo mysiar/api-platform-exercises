@@ -11,3 +11,7 @@ phpcs:
 phpcbf:
 	./vendor/bin/phpcbf --standard=./ruleset.xml --extensions=php
 .PHONY : phpcbf
+
+lint:
+	./vendor/bin/parallel-lint --exclude tests/app --exclude vendor --exclude bin .
+.PHONY : lint
