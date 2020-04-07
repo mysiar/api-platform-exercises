@@ -1,4 +1,6 @@
 api_platform:
+    title: 'Api-Platform exercises'
+    version: 0.0.10
     mapping:
         paths: ['%kernel.project_dir%/src/Entity']
     patch_formats:
