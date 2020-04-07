@@ -1,0 +1,13 @@
+doctrine:
+  dbal:
+    types:
+      geography: 'Jsor\Doctrine\PostGIS\Types\GeographyType'
+      geometry: 'Jsor\Doctrine\PostGIS\Types\GeometryType'
+      raster: 'Jsor\Doctrine\PostGIS\Types\RasterType'
+  orm:
+    dql:
+      string_functions:
+        ST_Area:  Jsor\Doctrine\PostGIS\Functions\ST_Area
+        ST_AsGeoJSON:  Jsor\Doctrine\PostGIS\Functions\ST_AsGeoJSON
+        ST_Transform:  Jsor\Doctrine\PostGIS\Functions\ST_Transform
+        ST_SetSRID: Jsor\Doctrine\PostGIS\Functions\ST_SetSRID

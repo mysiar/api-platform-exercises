@@ -113,6 +113,9 @@
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "jsor/doctrine-postgis": {
+        "version": "v1.7.0"
+    },
     "mysiar/coding-standard": {
         "version": "2.0.2"
     },

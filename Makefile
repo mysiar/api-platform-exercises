@@ -1,5 +1,14 @@
 SHELL:=/bin/bash
 
+db-init:
+	./bin/console d:d:d --force --if-exists
+	./bin/console doctrine:database:create
+	./bin/console doctrine:migrations:execute --up 00000000000000 -q
+	./bin/console doctrine:schema:create
+	./bin/console doctrine:migrations:execute --up 20200407062350 -q
+	./bin/console doctrine:fixtures:load -q
+.PHONY : db-init
+
 fix-load:
 	./bin/console doctrine:fixtures:load -q
 .PHONY : fix-load
